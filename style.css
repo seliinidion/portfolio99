@@ -1,0 +1,238 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; }
+    }
+
+body {
+    background-image:url(./docs/pink.png) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 8em;
+    margin-left: 30px;
+}
+
+
+/*headeri*/
+
+* {
+    box-sizing: border-box;
+  }
+  :root {
+    --background-color: rgb(0, 0, 0);
+    --text-color: hsl(0, 0%, 100%);
+  }
+  body {
+    margin: 0;
+    height: 100vh; /* Koko näytön korkeus */
+    width: 100%;
+  }
+  .wrapper {
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1.5rem, 1rem + 18vw, 15rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+  
+  .wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+  .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+  }
+  .bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+  }
+
+  /*headeri loppuu*/
+  
+
+
+
+  /*NAV*/
+  nav {
+    margin: 27px auto 0;
+    margin-bottom: 100px;
+  
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 100px;
+  }
+  a:nth-child(2) {
+    width: 110px;
+  }
+  a:nth-child(3) {
+    width: 100px;
+  }
+  a:nth-child(4) {
+    width: 160px;
+  }
+  a:nth-child(5) {
+    width: 120px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+  }
+  nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e6d460;
+  }
+  
+
+
+  span {
+      color: #2BD6B4;
+  }
+  
+
+    /*NAV LOPPUUU*/
+
+
+
+
+
+    /*aboutme*/
+
+    .aboutme {
+        height: 100vh; /* Koko näytön korkeus */
+        width: 100%;
+
+        font-size: 3em;
+        text-align: center;
+    }
+
+
+        /*aboutme loppuu*/
+
+
+
+
+
+
+
+
+
+/*section*/
+
+
+
+.transition {
+    margin-top: 100px;
+    position: relative;
+
+    height: 100vh; /* Koko näytön korkeus */
+    width: 100%;
+  }
+  
+  .transition-video {
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .transition-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .transition-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+  }
+  
+  .transition-text h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+  }
+  
+  .transition-text h2 {
+    font-size: 7rem;
+    margin-bottom: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+  }
+
+
+  /*section loppuu*/
+
+
+
+
